@@ -1,0 +1,848 @@
+@charset "UTF-8";
+		div{
+			display : block;
+		}
+		i{
+			font : inherit;
+		}
+		*{
+			list-style: none;
+    		word-break: break-all;
+    		word-wrap: break-word;
+    		box-sizing: border-box !important;
+    		margin : 0;
+    		padding : 0;
+		}
+		@font-face	{
+			font-family : "Exo-Bold";
+			src: url("../font/Exo-Bold.otf");	
+		}
+		button, input, select, textarea{
+			font-family : inherit;
+			font-size : 100%;
+			line-height : 1.15;
+		}
+		main{
+			display : block;
+			overflow-x : hidden;
+		}
+		table {
+		    border-collapse: collapse;
+		    border-spacing: 0;
+		}
+		select {
+			font-size: 100%;
+		    line-height: 1.15;
+		    margin: 0;
+		}
+		body select {
+			min-width: 120px;
+			eight: 40px;
+		    padding: 0 30px 0 10px;
+		    border: 1px solid #b2b2b2;
+		    font-family: inherit;
+		    background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_select.png") no-repeat 95% 50%;
+    		border-radius: 0px;
+		}
+		option {
+		    font-weight: normal;
+		    display: block;
+		    white-space-collapse: collapse;
+		    text-wrap: nowrap;
+		    min-height: 1.2em;
+		    padding: 0px 2px 1px;
+		}
+		.mainSection{
+			position : relative;
+			width : 1200px;
+			margin : 0 auto;
+		    min-height: calc(100vh - 340px);
+		    padding-bottom: 100px;
+		}	
+		body {
+			font-family: 'Noto Sans KR', sans-serif;
+			position: relative;
+		}
+		.bannertop {
+		    min-width: 1200px;
+			position : relative;
+			width : 100%;
+			height : 323px;
+		    background-image: url("https://www.fcseoul.com/resources/front/images/sub/common/img_top1.jpg");
+			background-size : cover	!important;
+		}
+		.container h2{
+			height: 263px;
+			display: flex;
+    		padding: 30px 0 20px;
+    		align-items: center;
+    		-webkit-box-align: center;
+    		justify-content: center;
+		    color: #fff;
+		    font-family: 'ExoBold';
+		    font-size: 56px;
+		    font-weight: 500;
+		    margin : 0 auto;
+		    font-family : 'Exo-Bold';
+			font-size : 56px;
+		}
+		.content ul{
+			display : flex;
+		}
+		.content{
+			width: 1200px;
+			height : 60px;
+    		margin: 0 auto;
+		}
+		.contentButton{
+			background: rgba(199, 1, 1, 0.9);
+    	    height: 60px;
+    	    position : absolute;
+    	    bottom: 0px;
+    	    width: 100vw;
+    		min-width: 1200px;
+    		left: 0;
+    		z-index: 9;
+		}
+		.content ul li{
+			position : relative;
+		}
+		body a{
+		    display: inline-block;
+		    text-decoration: none;
+		    color: #222;
+		}
+		li button {
+			color: #fff;
+		    min-width: 240px;
+		    height: 60px;
+		    padding: 0 20px;
+		    display: flex;
+		    -webkit-box-align: center;
+		    font-size: 18px;
+		    -webkit-box-pack: start;
+		    justify-content: flex-start;
+		    font-weight: 300;
+		    border-right: 1px solid #d43e3e;
+    		text-transform: uppercase;
+    		align-items: center;
+		}
+		body button {
+			border: none;
+		    background: none;
+		    margin: 0;
+		    cursor: pointer;
+		}
+		.bannertop .contentButton .content li .button::after {
+		    content: '';
+		    display: inline-block;
+		    width: 17px;
+		    height: 17px;	
+		    margin-left: auto;
+		    background: url(../Images/ico_dropDown.png) no-repeat center center;
+		}
+		.bannertop .contentButton .content li .on::after {
+		    content: '';
+		    display: inline-block;
+		    width: 17px;
+		    height: 17px;	
+		    margin-left: auto;
+		    background: url(../Images/ico_dropUp.png) no-repeat center center;
+		}
+		.bannertop .contentButton .content li.home a{
+			border: 1px solid #d43e3e;
+		    border-style: none solid;
+		    background: url(../Images/home.png) no-repeat center center;
+		    width: 60px;
+		    height: 60px;
+		}
+		#buttonUI {
+			position: absolute;
+		    top: 60px;
+		    left: 0;
+		    z-index: 1;
+		    width: 100%;
+		    background: #151515;
+		    color: #fff;
+		}
+		#buttonUI a{
+			color: #bbb;
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-start;
+		    text-decoration: none;
+		    height: 60px;
+		    font-size: 18px;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    padding: 0 20px;
+		}
+		#buttonUI li :hover{
+			color: #fff;
+    		background: #c70101;
+		}
+		#buttonUI li :hover::after{
+			content: '';
+		    display: inline-block;
+		    width: 20px;
+		    height: 7px;
+		    background: url(../Images/ico_go.png) no-repeat center center;
+		    margin-left: auto;
+		}
+		#buttonUI2 {
+			position: absolute;
+		    top: 60px;
+		    left: 0;
+		    z-index: 1;
+		    width: 100%;
+		    background: #151515;
+		    color: #fff;
+		}
+		#buttonUI2 a{
+			color: #bbb;
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-start;
+		    text-decoration: none;
+		    height: 60px;
+		    font-size: 18px;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    padding: 0 20px;
+		}
+		#buttonUI2 li :hover{
+			color: #fff;
+    		background: #c70101;
+		}
+		#buttonUI2 li :hover::after{
+			content: '';
+		    display: inline-block;
+		    width: 20px;
+		    height: 7px;
+		    background: url(../Images/ico_go.png) no-repeat center center;
+		    margin-left: auto;
+		}
+		body img{
+                    vertical-align: middle;        
+            }
+        .subtop{
+       	 		width :1200px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                height: 137px;
+                border-bottom: 1px solid #d2d2d2;
+                position: relative;
+                margin : 0 auto 50px auto;
+        }
+        .subtop .left{
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        }
+        .subtop .right{
+                right: 0; 
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        }
+        .subtop .right button {
+                font-size: 14px;
+                font-weight: 300;
+                color: #666;
+                border: 1px solid #666;
+                padding: 5px 10px;
+        }
+        .subtop .left span{
+                font-size: 16px;
+                font-weight: 300;
+                color: #666;
+        }
+        .subtop .left span img {
+                margin-left: 10px;
+            }
+        .subtop .left a {
+            margin-left: 15px;
+            display: inline-block;
+            text-decoration: none;
+            color: #222;
+        }
+        .h3 {
+            font-family: 'Noto Sans KR';
+            font-size: 38px;
+            font-weight: 700;
+            color: #222;
+            padding: 30px 0;
+        }
+        .mainSection {
+        	padding-bottom: 100px;
+        }
+        .teamTab {
+        	margin: -50px 0 50px;
+        }
+        .teamTab ul {
+       		justify-content: center;
+        	display : flex;
+		    border-bottom : 1px solid #d2d2d2;
+        }
+        .teamTab li {
+		    width: 12.5%;
+		    cursor : pointer;
+        }
+        .teamTab ul li.on a {
+		    border-bottom: 3px solid #c70101;
+		    color: #c70101;
+	    }
+        .teamTab ul li a {
+        	display: flex;
+		    text-align: center;
+		    height: 60px;
+		    justify-content: center;
+		    align-items: center;
+	        position: relative;
+        }
+        .teamTab ul li.on a::after {
+		    content: '';
+		    display: inline-block;
+		    width: 7px;
+		    height: 4px;
+		    background: url(../Images/ico_tab.jpg) no-repeat center center;
+		    position: absolute;
+		    bottom: -7px;
+		    left: 50%;
+		    transform: translateX(-50%);
+        }
+        .teamPlayer h4 {
+        	font-family: 'Noto Sans KR';
+        	display: flex;
+        	align-items: center;
+		    font-size: 30px;
+		    font-weight: 500;
+		    margin: 50px 0 10px;
+       	}
+       	.carrer h4 {
+       	
+       	}
+        .teamPlayer h4::before {
+		    content: '';
+		    display: inline-block;
+		    width: 5px;
+		    height: 28px;
+		    background: url(../Images/ico_title.jpg) no-repeat center center;
+		    margin-right: 14px;
+		}
+		.teamPlayer > ul {
+			display : flex;
+			flex-direction: row;
+		    flex-wrap: wrap;
+		    justify-content: flex-start;
+		}
+		.teamPlayer > ul li {
+			display : none;
+		}
+		.teamPlayer > ul li img {
+			width: 282px;
+    		height: 282px;
+		}
+		.teamPlayer > ul .on {
+			display : list-item;
+		}
+		.teamPlayer > ul li > a {
+			position : relative;
+			margin: 24px 24px 0 0;
+		    position: relative;
+		    background: #efefef url(../Images/bg__player.jpg) no-repeat center center;
+		}
+		.teamPlayer > ul li a div img {
+			width: 282px;
+    		height: 282px;
+		}
+		.teamPlayer > ul li.on:nth-of-type(4n) a{
+		    margin-right: 0;
+		}
+		.teamPlayer .txtWrap {
+			width: 282px;
+		    height: 50px;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    background: rgba(0, 0, 0, 0.8);
+		    color: #fff;
+		    font-size: 0;
+		    font-weight: 600;
+		    display: flex;
+		}
+		.teamPlayer .txtWrap .left {
+		    width: 82px;
+		    height: 50px;
+		    padding-left: 19px;
+		    font-size: 22px;
+		    background: url(../Images/bg_club_num.png) 0 0 no-repeat;
+		    text-align: left;
+		    display: inline-block;
+		    line-height : 50px;
+		}
+		.teamPlayer .txtWrap .right {
+			width: 200px;
+		    padding-right: 30px;
+		    font-size: 20px;
+		    text-align: right;
+		    display: inline-block;
+    		height: 50px;
+    		line-height: 50px;
+		}
+		.teamPlayer .txtWrap .right em{
+			font : inherit;
+			font-size : 16px;
+			font-weight : 300;
+		}
+		.mainpg {
+			
+		}
+		.bx-wrapper{
+			border : none !important;
+			background : none !important;
+			box-shadow : none !important;
+		}
+		.slider{
+			width : 1200px;
+			height : 200px;
+		}
+		.slider img{
+			width : 180px;
+			margin-right : 20px;
+			float: left;
+		}
+		.slider > div > div {
+			width: 180px;
+		    margin-right: 20px;
+		    float: left;
+		    position : relative;
+		    background: url(../Images/bg__player.jpg) 0 0 no-repeat;
+		    background-size: cover;
+    		overflow: hidden;
+   		    cursor: pointer;
+		}
+		.slider > div .txt{
+		    height: 36px;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    background: rgba(0, 0, 0, 0.8);
+		}
+		.slider > div .txt span.num {
+		    width: 59px;
+		    padding-left: 13px;
+		    background: url(../Images/bg_club_num.png) 0 0 no-repeat;
+		    background-size: cover;
+		}
+		.slider > div .txt span{
+			display: inline-block;
+		    height: 36px;
+		    color: #fff;
+		    line-height: 36px;
+		}
+		.slider > div .txt span.name {
+		    width: 117px;
+		    padding-right: 10px;
+		    text-align: right;
+		}
+		.memberInfo .info .imageBox{
+			display: flex;
+			position: relative;
+			height: 620px;
+		    background: url(../Images/bg_club_player.jpg) center 0 no-repeat;
+		    color: #fff;
+		}
+		.imageBox .textWrap{
+			width: 50%;
+		    position: relative;
+		    left: 0;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		}
+		.imageBox .textWrap .season{
+			font-size: 28px;
+		    font-weight: 600;
+		    position: absolute;
+		    top: 70px;
+		    left: 102px;
+		}
+		.stat {
+			display: flex;
+			margin-top : 150px;
+		}
+		.stat dl {
+		    width: 134px;
+		    height: 80px;
+		    position: relative;
+		    text-align: center;
+		}
+		.stat dl dt {
+		    font-size: 20px;
+		    font-weight: 500;
+		}
+		.stat dl dd {
+		    font-size: 63.17px;
+		    font-weight: 600;
+		    font-family: "Exo-Bold";
+		}
+		.stat dl::after {
+		    content: '';
+		    display: block;
+		    width: 1px;
+		    height: 80px;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    background: rgba(255, 255, 255, 0.2);
+		}
+		.profile {
+			margin-top : 30px;
+			position : relative;
+			width : 400px;
+		}
+		.profile > div {
+			display: flex;
+    		align-items: flex-end;
+    		margin-bottom: 10px;
+		}
+		.profile span {
+    		font-family: "Exo-Bold";
+		}
+		.profile dl {
+			display : flex;
+		    width: 400px;
+		    height: 48px;
+		    align-items: center;
+		    border-top: 1px solid;
+		    border-color: rgba(255, 255, 255, 0.2);
+		}
+		 .profile dt::before {
+		    content: '';
+		    display: block;
+		    width: 3px;
+		    height: 3px;
+		    position: absolute;
+		    top: 50%;
+		    left: 3px;
+		    border-radius: 100%;
+		    background: #fff;
+		}
+		.profile dt {
+			display: inline-block;
+			width: 103px;
+		    padding-left: 13px;
+		    position: relative;
+		    font-weight: 300;
+		}
+		.profile dd {
+		    display: inline-block;
+		    padding-left: 45px;
+		    font-weight: 300;
+		}
+		.profile .num {
+			font-size: 40px;
+    		margin-right : 40px;
+		}
+		.profile .name {
+			font-weight : 600;
+			margin-left: auto;
+    		font-size: 50px !important;
+		}
+		.career ul {
+		    border-top: 1px solid #222;
+		}
+		.career ul li {
+		    border-bottom: 1px solid #d2d2d2;
+		    vertical-align: middle;
+		}
+		.career ul li dl {
+			display : flex;
+		    justify-content: flex-start;
+		    font-size: 0;
+		    position: relative;
+		    padding: 30px 10px 30px 163px;
+		}
+		.career ul li dl dt span {
+		    display: inline-block;
+		    color: #b99867;
+		}
+		.career ul li dl dt {
+		    width: 180px;
+		    min-width: 180px;
+		    margin-right: 24px;
+		    padding: 14.5px 30px;
+		    font-family: 'ExoRegular', 'Noto Sans KR';
+		    font-size: 36px;
+		    font-weight: 600;
+		    position: absolute;
+		    top: 50%;
+		    left: 0;
+		    transform: translateY(-50%);
+		}
+		.career ul li dl dd::before {
+		    content: '';
+		    display: block;
+		    width: 3px;
+		    height: 3px;
+		    position: absolute;
+		    top: 12px;
+		    left: 0;
+		    background: #666;
+		}
+		.career ul li dl dd {
+		    padding: 0 19px 0 10px;
+		    position: relative;
+		    color: #666;
+		    font-size: 16px;
+		}
+		.record form {
+		    float: right;
+		    width: 120px;
+		    margin-top: 50px;
+		    border-radius: 2px;
+		    text-align: right;
+		}
+		.record select {
+		    min-width: 120px;
+		    height: 40px;
+		    padding: 0 30px 0 10px;
+		    border: 1px solid #b2b2b2;
+		    font-family: inherit;
+		    background: url(../Images/ico_select.png) no-repeat 95% 50%;
+		    border-radius: 0px;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+		}
+		.record table {
+			width : 100%;
+		}
+		.record table th {
+		    background: #f7f7f7;
+		    border-top: 1px solid #0e0e0e !important;
+		    font-weight: 500;
+		}
+		.record table td {
+		    font-weight: 300;
+		    color: #666;
+		}
+		.record table th , .record table td {
+			vertical-align: middle;
+		    text-align: center;
+		    font-size: 16px;
+		    font-weight: 300;
+		    border: 1px solid #ddd;
+		    padding: 15px;
+		}
+		.record > .league {
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+        .footer {
+	        background: #151515;
+	        font-weight: 300;
+	        position: relative;
+		}
+		.mainbot {
+		        background: #f3f3f3;
+		        padding: 60px 0;
+		        box-sizing: border-box;
+		        height: 503px;
+		}
+		.sponsorwrap {
+		        display: inline-block;
+		        width: 246px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap2 {
+		        display: inline-block;
+		        width: 118px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap3 {
+		        display: inline-block;
+		        width: 246px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 20px;
+		        font-weight: 600;
+		        margin-bottom: 39px;
+		        text-align: left;
+		}
+		.sponsorwrap2 strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 19px;
+		        font-weight: 650;
+		        margin-bottom: 17px;
+		        letter-spacing: -1px;
+		        text-align: left;
+		}
+		.sponsorwrap3 strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 19px;
+		        font-weight: 650;
+		        margin-bottom: 15px;
+		        letter-spacing: -1px;
+		        text-align: left;
+		}
+		.sponsorwrap strong:before, .sponsorwrap2 strong:before, .sponsorwrap3 strong:before
+		        {
+		        content: '';
+		        display: inline-block;
+		        width: 4px;
+		        height: 20px;
+		        background:
+		                url(https://www.fcseoul.com/resources/front/images/sub/common/ico_title.jpg)
+		                no-repeat center center;
+		        background-size: 100%;
+		        position: absolute;
+		        top: 3px;
+		        left: 0;
+		        letter-spacing: -1px;
+		}
+		.imgl {
+		        display: inline;
+		        float: left;
+		        margin-bottom: 7px;
+		}
+		.imgr {
+		        display: inline;
+		        float: right;
+		        margin-bottom: 7px;
+		}
+		.contentwrap2 {
+		        width: 1200px;
+		        position: relative;
+		        margin: auto;
+		}
+		.footer1 {
+		        border-bottom: 1px solid #272727;
+		        height: 60px;
+		}
+		.footer1 a {
+		        color: #ccc;
+		        height: 25px;
+		}
+		.foot {
+		        display: inline-block;
+		        width: 1200px;
+		        height: 60px;
+		        box-sizing: border-box;
+		        text-align: center;
+		}
+		.pri {
+		        display: inline;
+		        float: left;
+		        margin-top: 18px;
+		        letter-spacing: -1.2px;
+		}
+		.pri a {
+		        color: #f60000;
+		}
+		.pri1 {
+		        display: inline;
+		        margin-top: 18px;
+		        margin-left: 40px;
+		        float: left;
+		        letter-spacing: -1.3px;
+		}
+		.fright {
+		        display: inline-block;
+		        width: 236px;
+		        height: 60px;
+		        box-sizing: border-box;
+		}
+		.pri2 {
+		        display: inline;
+		        margin-top: 18px;
+		        margin-left: 30px;
+		        float: right;
+		}
+		.footer2 {
+		        padding: 20px 0 30px;
+		        height: 118px;
+		        box-sizing: border-box;
+		}
+		.foot1 {
+		        width: 174px;
+		        height: 68px;
+		        float: left;
+		}
+		.foot2 {
+		        color: #ccc;
+		        font-size: 14px;
+		        float: left;
+		        position: relative;
+		        padding-top: 10px;
+		}
+		.footer .foot2 img {
+		        margin-right: 40px;
+		}
+		.foot2 ul li::after {
+		        content: '';
+		        display: inline-block;
+		        width: 1px;
+		        height: 13px;
+		        background: #444;
+		        transform: translateY(-50%);
+		        position: absolute;
+		        top: 35%;
+		        margin-left: 15px;
+		}
+		.foot2 ul li:nth-child(4)::after {
+		        display: none;
+		}
+		.footer .footer2 ul li {
+		        display: inline;
+		        list-style-type: none;
+		        margin-right: 30px;
+		        font-size: 14px;
+		        letter-spacing: -0.8px;
+		}
+		.footer .footer2 ul {
+		        margin-bottom: 5px;
+		}
+		.footer .footer2 p {
+		        color: #ccc;
+		        font-size: 15px;
+		        margin-top: 10px;
+		        letter-spacing: -0.5px;
+		}
+		.footer .foot3 img {
+		        float: right;
+		        margin-top: 10px;
+		}
+		.footer .mainbot .contentwrap {
+		        width: 1222px;
+		        margin: auto;
+		}

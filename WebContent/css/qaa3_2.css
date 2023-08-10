@@ -1,0 +1,2060 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+}
+body,html{
+	min-width:1200px;
+	position: relative;
+	font-family :"Noto Sans KR";
+}
+body img{
+	vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+}
+/* 사이드바 */
+.sidebar{
+	position: absolute;
+	top:180px;
+	right: 20px;
+	width: 70px;
+	height: 350px;
+	z-index: 11;
+}
+.sidebar a{
+	display: block;
+    width: 70px;
+    height: 70px;
+    background:url(../Images/quickWrap.jpg) no-repeat 0 0;
+}
+.sidebar li:nth-child(2) a{
+	background-position-y: -71px;
+}
+.sidebar li:nth-child(3) a{
+	background-position-y: -142px;
+}
+.sidebar li:nth-child(4) a{
+	background-position-y: -213px;
+}
+.sidebar li:last-child a{
+	background-position-y: -284px;
+}
+.sidebar li:hover a{
+    background: url(../Images/quickWraphover.jpg)  ;
+}
+.sidebar li:hover:nth-child(2) a{
+	background-position-y: -71px;
+}
+.sidebar li:hover:nth-child(3) a{
+	background-position-y: -142px;
+}
+.sidebar li:hover:nth-child(4) a{
+	background-position-y: -213px;
+}
+.sidebar li:hover:last-child a{
+	background-position-y: -284px;
+}
+/* 사이드바 */
+
+/* 티켓예매 */
+.ticketbox{
+	position: absolute;
+	top:180px;
+	right: 110px;
+	background: url(../Images/mainticketbox.png) no-repeat 0 0;
+	width: 240px;
+	height: 250px;
+	padding: 10px;
+	background-size: cover; 
+	z-index: 22;
+	text-align: center;
+}
+.ticketbox span img{
+	width: 21px !important;
+    height: 24px !important;
+}
+.ticketbox strong{
+	color: #c70101;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 7px 0;
+}
+.ticketbox span{
+	font-size: 14px;
+    font-weight: 400;
+    font-family :"Noto Sans KR";
+}
+/* .ticketbox .match{
+	width: 215px;
+	height: 84px;
+	margin:0 auto;
+	border: 1px solid black;
+} */
+.ticketbtn {
+	margin-top: 10px;
+}
+.ticketbtn a{
+	display: block;
+	width: 215px;
+	height: 38px;
+	margin:0 auto;
+	background: #c70101;
+	text-align:center;
+	color: #fff;
+	line-height: 38px;
+	font-size: 14px;
+	font-family :"Noto Sans KR";
+	
+}
+.matchinfo{
+	margin-top: 10px;
+	width: 100%;
+	height: 84px;
+}
+.mi1 {
+	margin: 0 auto;
+	width: 220px;
+	height: 84px;
+}
+.matchinfo p{
+	margin-top: 5px;
+
+}
+.matchinfo .home {
+	float: left;
+	width: 84px;
+	height: 84px;
+}
+.matchinfo .vs{
+	height:84px;
+	float:left;
+	font-size: 32px;
+	font-weight: 600;
+	color: #888;
+	margin: 0 7px;
+}
+.matchinfo .away{
+	float: left;
+	width: 84px;
+	height: 84px;
+	
+}
+.matchinfo .away p{
+	font-size: 16px;
+	font-weight: 500;
+	
+}
+.ticketbox img{
+	width: 60px;
+	height: 60px;
+}
+/* 티켓예매 */
+
+/* .header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: #2b2b2b;
+    position: absolute;
+    left: 0;
+    top: 90px;
+} */
+/* 상단 배너 */
+.header a{
+    color: #fff;
+}
+.wrap{
+    min-width: 1200px;
+}
+.wrap h2 {
+    text-transform: uppercase;
+   font-family: 'ExoBold', 'Noto Sans KR';
+    font-size: 28px;
+}
+.wrap h4{
+	font-family: 'ExoBold', 'Noto Sans KR';
+	font-size: 24px;
+}
+.header{
+    background: black;
+    position: relative;
+}
+.header .subheader{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.header .subheader .header1{
+    height: 90px;
+}
+.header .subheader .header1 .left{
+    width: 180px;
+    height: 90px;
+    float: left;
+}
+.header .subheader .header1 .left ul{
+    width: 210px;
+    height: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.header .subheader .header1 .left ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 24px;
+}
+.header .subheader .header1 .center{
+    float: left;
+    width: 640px;
+    height: 90px;
+}
+.header .subheader .header1 .center a img{
+    float: left;
+   margin: 11px 160px 11px 347px;
+}
+.header .subheader .header1 .right{
+    float: left;
+    width: 370px;
+    height: 90px;
+}
+.header .subheader .header1 .right ul{
+    float: left;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    margin-left: 12px;
+}
+.header .subheader .header1 .right ul li{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;	
+}
+.header .subheader .header1 .right ul li:first-child{
+	margin-left: 0px	
+}
+.header .subheader .header1 .right ul li{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin-left: 24px;
+}
+.header .subheader .header1 .right ul li:first-child a::before{
+    display: inline-block;
+    content: '';
+    background: url(https://www.fcseoul.com/resources/front/images/common/ico_headerTop1.png) no-repeat 0 center;
+    width: 16px;
+    height: 22px;
+    margin-right: 8px;
+   vertical-align: middle;
+}
+.header .subheader .header1 .right ul li:nth-child(2) a::before{
+    display: inline-block;
+    content: '';
+    background: url(https://www.fcseoul.com/resources/front/images/common/ico_headerTop2.png) no-repeat 0 center;
+    width: 16px;
+    height: 22px;
+    margin-right: 8px;
+   vertical-align: middle;
+}
+.header .subheader .header1 .right ul li:nth-child(3) a::before{
+    display: inline-block;
+    content: '';
+    background: url(https://www.fcseoul.com/resources/front/images/common/ico_headerTop3.png) no-repeat 0 center;
+    width: 16px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+   
+}
+.header .subheader .header1 .right a.eng{
+    float: left;
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 20px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.header .subheader .header1 .right a.eng:hover{
+    color: black;
+    background-color: #fff;
+}
+.header .subheader .header2{
+    height: 70px;
+}
+.header .subheader .header2 .allmenu{
+   height: 70px;
+   width: 70px;
+   border-left: 1px solid #2b2b2b;
+   border-right: 1px solid #2b2b2b;
+   padding: 0px 20px;
+   box-sizing: border-box;
+   float: left;
+   cursor: pointer;
+   
+}
+
+
+
+
+.subheader .on{
+	background:#fff;
+	z-index: 23;
+	position: absolute;
+}
+
+.subheader .on	 span {
+    background: #222 !important;			
+}
+
+.subheader .on .all2 {
+    opacity: 0;
+}
+
+.subheader .on .all1 {
+    transform: translateY(10px) rotate(45deg);
+     background: #222;
+}
+
+.subheader .on .all3 {
+    transform: translateY(-10px) rotate(-45deg);
+     background: #222;
+}
+
+
+
+
+
+ .header .subheader .header2 .allmenu .all1{
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 30px;
+    transition: all 0.4s;
+	margin-top: 25px;
+ }
+ .header .subheader .header2 .allmenu .all2{
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 24px;
+    transition: all 0.4s;
+	margin-top: 8px;
+ }
+ .header .subheader .header2 .allmenu .all3{
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 30px;
+    transition: all 0.4s;
+	margin-top: 8px;
+ }
+ 
+.header .subheader .header2 .menulist{
+    float: left;
+    z-index: 22;
+    width: 1130px;
+    line-height: 70px;
+    position: absolute;
+    left: 70px;
+}
+.header .subheader .header2 .menulist li {
+    text-transform: uppercase;
+    float: left;
+    font-size: 18px;
+    height: 70px;
+    text-align: center;
+}
+
+
+
+
+
+.header .subheader .header2 .menulist li a{
+    text-transform: uppercase;
+    float: left;
+    font-size: 18px;
+    height: 70px;
+    padding: 0 43px;
+    text-align: center;
+    
+}
+.header .subheader .header2 .menulist li:last-child a{
+    text-transform: uppercase;
+    float: left;
+    font-size: 18px;
+    height: 70px;
+    padding: 0 44px;
+    text-align: center;
+    color: #b99867	;
+}
+.header .subheader .header2 .menulist li:last-child a:before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    margin-right: 5px;
+    background: url("https://www.fcseoul.com/resources/front/images/common/ico_shop.png") no-repeat 0 center;
+	vertical-align: middle;
+}
+.header .subheader .header2 .menulist li:last-child a:hover:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    margin-right: 5px;
+    background: url("https://www.fcseoul.com/resources/front/images/common/ico_shopOver.png");
+}
+
+/* .header .subheader .header2 .menulist li a:hover{
+    color: black;
+    background: #fff;
+    
+} */
+.over a{
+	color: black !important;
+    background: #fff;
+}
+
+
+
+
+.header .subheader .header2 .menulist li:last-child a:hover{
+    color: #fff;
+    background: #b99867;
+}
+
+.header .bannerList{
+	width: 100%;
+	background: #fff;
+	top: 160px;
+	position: absolute;
+	z-index: 23;
+}
+.header .bannerList .subBanner{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.header .bannerList .subBanner a{
+	color: #222;
+}
+.header .bannerList .subBanner .allList{
+	padding: 15px 0;
+}
+
+
+
+
+.header .bannerList .subBanner .allList .list1{
+	margin-left:76px;
+	height: 333.56px;
+	width: 1124px; 
+}
+.header .bannerList .subBanner .allList .list1 .list1box {
+	float:left; 
+	box-sizing: border-box;
+	height: 333.56px;
+}
+.header .bannerList .subBanner .allList .list1 .list1box ul li{
+	padding: 15px 0;
+	text-align: center;
+	font-weight: 400;
+}
+.header .bannerList .subBanner .allList .list1 .list1box ul li a{
+	width: 100%;
+}
+.header .bannerList .subBanner .allList .list1 .list1box ul li a:hover{
+	color: #c70101;
+}
+.header .bannerList .subBanner .allList .vrbanner{
+	height:150px;
+	margin: 20px 0px 15px;
+}
+.header .header2 .allmenu:checked .allList	{
+	display: block;		/*클릭시 안나옴???/???*/
+}
+.header .bannerList .detailmenu .detailleft{
+	height: 393px;
+	width: 300px;
+	float: left;
+}
+.header .bannerList .detailmenu ul li{
+	
+}
+
+
+
+
+
+.header .bannerList .detailmenu .detailleft h2{
+	padding: 30px 0px 10px;
+}
+.header .bannerList .detailmenu .detailleft ul {
+	border-top: 1px solid #0e0e0e;
+    width: 280px;
+    height:140.78px;
+    margin-right: 20px;
+}
+
+
+
+
+.header .bannerList .detailmenu .detailleft ul li	{
+    font-size: 16px;
+}
+
+
+
+
+.header .bannerList .detailmenu .detailleft ul li a{
+	border-bottom: 1px solid #e2e2e2;
+    padding: 10px 10px;
+    width: 280px;
+	height:46.59px;
+    font-size: 16px;
+    display: block;
+    position:relative;
+    box-sizing: border-box;	
+}
+.header .bannerList .detailmenu .detailleft ul li a:before{
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	background:black;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.header .bannerList .detailmenu .detailleft ul li a:after {
+	content: '';
+	display: inline-block;
+	width: 9px;
+	height: 15px;
+	background: url("https://www.fcseoul.com/resources/front/images/common/ico_go.png") no-repeat ;
+	float: right;
+	vertical-align: middle;
+	margin-top: 5.5px;
+}
+.header .bannerList .detailmenu .detailleft ul li .dshop:after{
+	content:'';
+	display:inline-block;
+	width:15px;
+	background: url("https://www.fcseoul.com/resources/front/images/common/ico_blank.png") no-repeat center center;
+}
+.header .bannerList .detailmenu .detailleft ul li .dshop:hover:after{
+	background: url("https://www.fcseoul.com/resources/front/images/common/ico_blank_on.png") no-repeat center center;
+}
+.header .bannerList .detailmenu .detailleft ul li a:hover {
+	color: #c70101;
+}
+.header .bannerList .detailmenu .detailleft ul li a:hover:after{
+	background: url("https://www.fcseoul.com/resources/front/images/common/ico_go_on.png") no-repeat ;
+}
+.header .bannerList .detailmenu .detailright{
+	height:393px;
+	width:900px;
+	padding: 15px 0px;
+	float: left;
+	box-sizing: border-box;
+}
+.header .bannerList .detailmenu .detailright .mediabox{
+	float: left;
+	width: 285px;
+}
+.header .bannerList .detailmenu .detailright .mediabox+.mediabox{
+	margin-left: 15px;
+}
+.header .bannerList .detailmenu .detailright .mediabox a{
+	display:inline-block;
+	width: 282px;
+    height: 158px;
+    position: relative;
+    margin-top: 10px;
+ 
+}
+.header .bannerList .detailmenu .detailright .mediabox a .mediaimg{
+	width: 282px;
+    height: 158px;
+}
+
+.header .bannerList .detailmenu .detailright .mediabox .text{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #fff;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 282px;
+    padding: 10px;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+    box-sizing: border-box;
+
+}
+.header .bannerList .detailmenu .detailright .mediabox .noticebox{
+	background: #f9f9f9;
+	box-sizing: border-box;
+}
+.header .bannerList .detailmenu .detailright .mediabox .noticebox .nbox1{
+	border: 1px solid #d2d2d2;
+    padding: 10px;
+    width: 282px;
+    height: 158px;
+    box-sizing: border-box;
+}
+.header .bannerList .detailmenu .detailright .mediabox .noticebox .nbox1 .ntext{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.header .bannerList .detailmenu .detailright .mediabox .noticebox .nbox1 .ntext2{
+	font-size: 14px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6em;
+    height: 4.8em;
+}
+.ndate{
+	font-weight: 300;
+	margin-top: 10px;
+	vertical-align: middle;
+}
+.ndate:before {
+	content: '';
+	display: inline-block;
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_date.png") no-repeat;
+	margin-right: 10px;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;	
+}
+.header .bannerList .detailmenu .detailright .mbox{
+	width:285px;
+	height:353px;
+	background: #f9f9f9;
+    border: 1px solid #d2d2d2;
+    padding: 20px;
+    margin: 20px 0px 0;
+    text-align: center;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+}
+.header .bannerList .detailmenu .detailright .mid{
+	margin: 20px 20px 0;
+}
+.header .bannerList .detailmenu .detailright .mbox2{
+	width:285px;
+	height:353px;
+	background: url("https://www.fcseoul.com/resources/front/images/common/bg_matches_current.jpg");
+	float: left;
+	margin: 20px 0px 0;
+	color: #fff;
+	position: relative;
+}
+.header .bannerList .detailmenu .detailright .mbox .scorebox{
+	margin: 20px 0;
+	padding: 0 5px;
+	height: 110px;
+}
+.header .bannerList .detailmenu .detailright .mbox .mleft{
+	width: 80px;
+	height: 110px;
+	float: left;
+}
+.header .bannerList .detailmenu .detailright .mbox img{
+	height: 80px;
+	width: 80px;
+}
+.header .bannerList .detailmenu .detailright .mbox .mleft P{
+	font-weight: 500;
+    margin-top: 5px;
+    width: 80px;
+    line-height: 1.2;
+    text-align: center;
+}
+.header .bannerList .detailmenu .detailright .mbox .mcenter{
+	margin: 20px 0px 0;
+	width: 73px;
+	height: 48px;
+	float: left;
+	font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'ExoBold', 'Noto Sans KR';
+    text-align: center;
+}
+.header .bannerList .detailmenu .detailright .mbox .mcenter .mc1{
+	width: 60px;
+	height: 40px;
+	margin: 0 auto;
+}
+.header .bannerList .detailmenu .detailright .mbox .mcenter p{
+	width: 20px;
+	float: left;
+	text-align: center;
+}
+.header .bannerList .detailmenu .detailright .mbox .mright{
+	width: 80px;
+	height: 110px;
+	float: left;
+}
+.header .bannerList .detailmenu .detailright .mbox .mright p{
+	font-weight: 500;
+    margin-top: 5px;
+    width: 80px;
+    line-height: 1.2;
+    text-align: center;
+}
+.header .bannerList .detailmenu .detailright .mbox .matchtime{
+	position:absolute;
+	left:0;
+	bottom:75px;
+	margin: 0 15px;
+	width: 253px;
+	
+}
+.header .bannerList .detailmenu .detailright .mbox .matchtime p:first-child {
+	font-size: 18px;
+	font-weight: 500;
+}
+.header .bannerList .detailmenu .detailright .mbox .matchtime p:last-child {
+	font-size: 16px;
+	font-weight: 300;
+}
+.header .bannerList .detailmenu .detailright .mbox .matchresult{
+	position:absolute;
+	left:0;
+	bottom:15px;
+	margin: 0 15px;
+	width: 253px;
+	height: 46px;
+}
+.header .bannerList .detailmenu .detailright .mbox .matchresult a{
+	display:block;
+	width: 253px;
+	height: 46px;
+	background: #a88859;
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+}
+.header .bannerList .detailmenu .detailright .mbox .mcenter .vs{
+	width:40px;
+	margin: 0 16.5px;	
+}
+.header .bannerList .detailmenu .detailright .mbox .matchtime p:first-child{
+	color: #c70101;
+}
+.header .bannerList .detailmenu .detailright .mbox2 p{
+	text-align: center;
+}
+.header .bannerList .detailmenu .detailright .mbox2 img{
+	margin-right: 10px;
+}
+.header .bannerList .detailmenu .detailright .mbox2 p:first-child{
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Noto Sans KR';
+}
+.header .bannerList .detailmenu .detailright .mbox2 p:nth-child(2) {
+	font-size: 22px;
+    font-weight: 500;
+}
+.header .bannerList .detailmenu .detailright .mbox2 p:nth-child(3) strong {
+	font-size: 92px;
+	color: #ae9050;
+}
+.header .bannerList .detailmenu .detailright .mbox2 p:nth-child(3){
+	font-size: 32px;
+    font-weight: 500;
+    height: 132px;
+    margin-top: 12px;
+}
+.header .bannerList .detailmenu .detailright .mbox2 .teamrecode{
+	text-align: center;
+	color: #ccc;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0 30px;
+}
+.header .bannerList .detailmenu .detailright .mbox2 .teamrecode b{
+	color: #fff;
+    font-weight: 500;
+}
+.header .bannerList .detailmenu .detailright .mbox2 .allrecode{
+	position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+	text-align: center;
+}	
+.arbtn{
+	display:block;
+	background: none;
+    color: #fff !important;
+    border: 1px solid #fff;
+    width: 255px;
+    height: 46px;
+    line-height: 48px;
+}
+.arbtn:hover {
+	color: black !important;
+	background: #fff;
+}
+.detailright .membox{
+	float: left;
+}
+.detailright .membox+.membox{
+	margin-left: 30px;
+}
+
+
+/* club right박스 만들기 */
+.rightclub{
+	
+	height: 393px;
+	padding: 20px 0px;
+	float: left;
+	box-sizing: border-box;
+}
+.rightclub .clubbox+.clubbox{
+	margin-left: 24px;
+} 
+.clubbox .lbtn{
+	top:50%;
+}
+.clubbox .rbtn{
+	top:50%;
+}
+.clubbox{
+	float: left;
+	position: relative;
+}
+.clubbox:first-child{
+	height:353px;
+	width:	282px;
+	overflow: hidden;
+}
+.clubbox ul{
+	width: 2400px;
+	height: 353px;
+}
+.clubbox ul li{
+	height:353px;
+	width:	282px;
+	float: left;
+	background: url("https://www.fcseoul.com/resources/front/images/common/img_drop_c1.jpg");
+}
+.clubbox a{
+	display: block;
+	width: 282px;
+	height: 353px;
+}
+
+ .pinfo{
+	position: absolute;
+    left: 50px;
+    top: 50% ;
+    transform: translateY(-50%);
+    line-height: 1.4;
+    color: #fff;
+}
+.pinfo .position{
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+}
+.pinfo .name{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+}
+.pinfo .goal{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+}
+.pinfo .asssist{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+}
+.pinfo strong{
+	margin-right: 10px;
+}
+.pinfo1{
+	position: absolute;
+    left: 50px;
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    line-height: 1.4;
+}
+.pinfo2{
+	position: absolute;
+    left: 50px;
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    line-height: 1.4;
+}
+.pinfo3{
+	position: absolute;
+    left: 50px;
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    line-height: 1.4;
+}
+
+.pinfo span{
+	color: #fff;
+}
+.clubbox ul li img{
+	width: 283px;
+	height: 283px;
+	position: relative;
+	top:70px;
+	left: 65px;
+}
+
+.detailright .fanbox{
+	float: left;
+}
+.detailright .fanbox a{
+	width: 282px;
+	height: 353px;
+	display: block;
+}
+.detailright .fanbox+.fanbox{
+	margin-left: 27px;
+}
+
+.shopbox{
+	border: 1px solid #d2d2d2;
+    width: 900px;
+    height: 353px;
+    text-align: center;
+}
+.shopbox strong{
+	font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0 0px;
+    display: block;
+}
+.shopbox .shopitem{
+	height: 301px;
+	position: relative;
+}
+.shopbox .shopitem .inner{
+	height: 301px;
+	margin: 0 auto;
+	width: 900px;
+	overflow: hidden;
+	position: relative;
+}
+.shopbox .shopitem .inner .inner1{
+	height: 301px;
+	width: 900px;
+}
+.lbtn{
+	position: absolute;
+	left: 0;	
+	cursor: pointer;
+	top: calc(50% - 30px);
+	transform:translateY(-50%);
+	width: 32px;
+	height: 56px;
+	z-index: 1;
+}
+.rbtn{
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	top: calc(50% - 30px);
+    transform: translateY(-50%);
+    width: 32px;
+	height: 56px;
+	z-index: 1;
+}
+.shopbox .shopitem .inner ul {
+	/* 박스 중앙으로 이미지 정렬*/
+	width: 750px;
+	height: 301px;
+	
+	padding-top: 49px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.shopbox .shopitem .inner ul .shopslide{
+	margin: 0 auto;
+	width: 750px;
+	height: 301px;
+}
+
+.shopbox .shopitem .inner li{
+	float: left;
+	position: relative;
+}
+.shopbox .shopitem .inner li+li{
+	margin-left: 10px;
+}
+.shopbox .shopitem .inner a{
+/* 	height: 221px;
+	width: 180px; */
+	display: block;
+}
+.shopbox .shopitem .inner img{
+	margin-bottom: 10px;
+}
+
+.shopbox .shopitem .inner p{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	width: 180px;
+	white-space: nowrap;
+	word-wrap: normal;
+	font-family: "Noto Sans KR";
+	font-size: 16px;
+	font-weight: 400px;	
+}
+.shopbox .shopitem .inner .price{
+	color: #c70101	
+}
+.shopbox .shopitem .inner a:hover .shopimg:before {
+	content: '';
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background: rgba(199, 1, 1, 0.8) url("https://www.fcseoul.com/resources/front/images/main/icon_shop.png") no-repeat center center;
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%);
+    top: 0;
+}
+/* 상단 배너 */
+
+
+
+
+
+.bannerlayer{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 22;
+    
+}
+.bannerlayer2{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 21;
+}
+
+/* 상단 배너 */
+
+/* .fanzonetop{
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/img_top5.jpg") no-repeat 0 center;
+	width: 100%;
+    height: 323px;
+    position: relative;
+}
+.fanzonetop .fanzonetitle{
+	margin: 0 auto;
+	width: 1200px;
+}
+.fanzonetop .fanzonetitle h2{
+	height: 263px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+    font-family: 'ExoBold';
+    font-size: 56px;
+    font-weight: 500;
+}
+.fanzonetop .fanzonebtn{
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	background: rgba(199, 1, 1, 0.9);
+	width: 100%;
+	z-index: 9;
+	min-width: 1200px;
+}
+.fanzonetop .fanzonebtn .fzb1{
+	margin: 0 auto;
+	width: 1200px;
+	height: 60px;
+}
+.fanzonetop .fanzonebtn .fzb1 .subfzb1{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 li{
+	position: relative;
+}
+
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 li ul{
+	position: absolute;
+	top:60px;
+	left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #151515;
+}
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 li ul li a{
+	height: 60px;
+	display: flex;
+	align-items: center;	
+    color: #bbb;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 20px;	
+}
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 li ul li a:hover{
+	background: #c70101;
+	color: #fff;
+}
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 li ul li a:hover:after{
+	background: url("https://www.fcseoul.com/resources/front/images/main/ico_go.png") no-repeat center center;
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 7px;
+	margin-left: auto;
+}
+
+
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 .home{
+	display:block;
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_home.png")no-repeat center center;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #d43e3e;
+	box-sizing: border-box;
+}
+.fanzonetop .fanzonebtn .fzb1 .subfzb1 button{
+	min-width: 240px;
+	height: 60px;
+	padding: 0 20px;
+    font-size: 18px;
+    font-weight: 300;
+    background: none;
+    border: none ;
+    border-right: 1px solid #d43e3e;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.fanzonetop .fanzonebtn .fzb1 ul button:after{
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_dropDown.png")no-repeat center center;
+	margin-left: 92px;
+} */
+
+
+
+
+		.bannertop {
+		    min-width: 1200px;
+			position : relative;
+			width : 100%;
+			height : 323px;
+		    background-image: url("https://www.fcseoul.com/resources/front/images/sub/common/img_top1.jpg");
+			background-size : cover	!important;
+		}
+		.container h2{
+			height: 263px;
+			display: flex;
+    		padding: 30px 0 20px;
+    		align-items: center;
+    		-webkit-box-align: center;
+    		justify-content: center;
+		    color: #fff;
+		    font-family: 'ExoBold';
+		    font-size: 56px;
+		    font-weight: 500;
+		    margin : 0 auto;
+		    font-family : "Exo-Bold";
+			font-size : 56px;
+		}
+		.content ul{
+			display : flex;
+		}
+		.content{
+			width: 1200px;
+			height : 60px;
+    		margin: 0 auto;
+		}
+		.contentButton{
+			background: rgba(199, 1, 1, 0.9);
+    	    height: 60px;
+    	    position : absolute;
+    	    bottom: 0px;
+    	    width: 100%;
+    		min-width: 1200px;
+    		left: 0;
+    		z-index: 9;
+		}
+		.content ul li{
+			position : relative;
+		}
+		body a{
+		    display: inline-block;
+		    text-decoration: none;
+		    color: #222;
+		}
+		li button {
+			color: #fff;
+		    min-width: 240px;
+		    height: 60px;
+		    padding: 0 20px;
+		    display: flex;
+		    -webkit-box-align: center;
+		    font-size: 18px;
+		    -webkit-box-pack: start;
+		    justify-content: flex-start;
+		    font-weight: 300;
+		    border-right: 1px solid #d43e3e;
+    		text-transform: uppercase;
+    		align-items: center;
+		}
+		body button {
+			border: none;
+		    background: none;
+		    margin: 0;
+		    cursor: pointer;
+		}
+		.bannertop .contentButton .content li .button::after {
+		    content: '';
+		    display: inline-block;
+		    width: 17px;
+		    height: 17px;	
+		    margin-left: auto;
+		    background: url(../Images/ico_dropDown.png) no-repeat center center;
+		}
+		.bannertop .contentButton .content li .on::after {
+		    content: '';
+		    display: inline-block;
+		    width: 17px;
+		    height: 17px;	
+		    margin-left: auto;
+		    background: url(../Images/ico_dropUp.png) no-repeat center center;
+		}
+		.bannertop .contentButton .content li.home a{
+			border: 1px solid #d43e3e;
+		    border-style: none solid;
+		    background: url(../Images/home.png) no-repeat center center;
+		    width: 60px;
+		    height: 60px;
+		}
+		#buttonUI {
+			position: absolute;
+		    top: 60px;
+		    left: 0;
+		    z-index: 1;
+		    width: 100%;
+		    background: #151515;
+		    color: #fff;
+		}
+		#buttonUI a{
+			color: #bbb;
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-start;
+		    text-decoration: none;
+		    height: 60px;
+		    font-size: 18px;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    padding: 0 20px;
+		}
+		#buttonUI li :hover{
+			color: #fff;
+    		background: #c70101;
+		}
+		#buttonUI li :hover::after{
+			content: '';
+		    display: inline-block;
+		    width: 20px;
+		    height: 7px;
+		    background: url(../Images/ico_gogo.png) no-repeat center center;
+		    margin-left: auto;
+		}
+		#buttonUI2 {
+			position: absolute;
+		    top: 60px;
+		    left: 0;
+		    z-index: 1;
+		    width: 100%;
+		    background: #151515;
+		    color: #fff;
+		}
+		#buttonUI2 a{
+			color: #bbb;
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-start;
+		    text-decoration: none;
+		    height: 60px;
+		    font-size: 18px;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    padding: 0 20px;
+		}
+		#buttonUI2 li :hover{
+			color: #fff;
+    		background: #c70101;
+		}
+		#buttonUI2 li :hover::after{
+			content: '';
+		    display: inline-block;
+		    width: 20px;
+		    height: 7px;
+		    background: url(../Images/ico_gogo.png) no-repeat center center;
+		    margin-left: auto;
+		}
+
+
+
+
+
+
+.sns1{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.sns1 .sns1top{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #d2d2d2;
+	position: relative;
+}
+.sns1 .sns1left{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 16px;
+    font-weight: 300;
+    color: #666;
+}
+.sns1 .sns1left img{
+	margin-left: 10px;
+}
+.sns1 h3{
+	padding: 30px 0;
+	font-family: 'Noto Sans KR';
+    font-size: 38px;
+    font-weight: 700;
+    color: #222;
+}
+.sns1 .sns1right{
+	position: absolute;
+	right: 0;
+	top:50%;
+	transform : translateY(-50%);
+}
+.sns1 .sns1right button {
+	font-size: 14px;
+	font-weight: 300;
+	color: #666;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    background: #fff;
+    cursor: pointer;
+}
+.sns1 .howtouse{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.sns1 .howtouse .howtousetext{
+	padding-left: 20px;
+}
+.sns1 .howtouse .howtousetext strong{
+	font-size: 20px;
+	color: #222;	
+}
+.sns1 .howtouse .howtousetext p{
+	color: #666;
+    font-weight: 300;
+    word-break: keep-all;
+}
+.sns1 .howtouse .howtousetext p span{
+	color: #c70101;
+    font-weight: 400;
+}
+
+
+.sns1 .socialtop{
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+}
+.sns1 .socialtop h4{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: "Noto Sans KR";
+}
+.sns1 .socialtop h4:before {
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_title.jpg")no-repeat center center;
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 28px;
+	margin-right: 14px;
+}
+.gomyqa{
+	background: #c70101;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+
+
+
+.sns1 .socialtop form{
+	margin-left: auto;
+}
+.sns1 .socialtop .selectbox{
+	width:120px;
+	height: 40px;
+	border: 1px solid #b2b2b2;
+}
+.sns1 .socialtop .searchbox{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #b2b2b2;
+	padding: 8px;
+	box-sizing: border-box;
+}
+.sns1 .socialtop .submitbox{
+	border-color: #222;
+    background: #222;
+    color: #fff;
+    font-weight: 300;
+   min-width: 120px;
+    height: 40px;
+}
+
+table {
+	 border-collapse: collapse;
+	 margin-top: 20px;	
+	table-layout: fixed;
+	white-space: nowrap;
+	width: 1200px;
+}
+tr{
+	border-left: none;
+	table-layout: fixed;
+}
+th{
+	background: #f7f7f7;
+    border-top: 1px solid #0e0e0e;
+    font-weight: 500;
+	height: 56px;	
+	border: 1px solid #b2b2b2;
+	border-top: 1px solid #0e0e0e;
+	  table-layout: fixed;
+}
+td{
+	height: 57px;	
+	padding: 15px;
+	box-sizing: border-box;
+	font-weight: 300;
+    color: #666;
+    border: 1px solid #b2b2b2;
+    table-layout: fixed;
+    word-break:break-all;
+}
+.sns1 table tr th:first-child{
+	width: 100px;
+	border-left: none;
+	table-layout: fixed;
+}
+.sns1 table tr th:nth-child(2){
+	width: 240px;
+	table-layout: fixed;
+}
+.sns1 table tr th:nth-child(3){
+	width: 600px;
+	table-layout: fixed;
+}
+.sns1 table tr th:nth-child(4){
+	width: 140px;
+	table-layout: fixed;
+}
+.sns1 table tr th:last-child{
+	width: 120px;
+	border-right: none;
+	table-layout: fixed;
+}
+
+.sns1 table tr td:first-child{
+	text-align: center;
+	width: 100px;
+	border-left: none;
+	table-layout: fixed;
+}
+.sns1 table tr td:nth-child(2){
+	width: 240px;
+	text-align: center;
+	table-layout: fixed;
+}
+.sns1 table tr td:nth-child(3){
+	width: 600px;
+	table-layout: fixed;
+}
+.sns1 table tr td:nth-child(3) span{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    max-width: 450px;
+    display: inline-block;
+}
+
+.sns1 table tr td:nth-child(3) img{
+	
+	table-layout: fixed;
+    margin-top: -14px;
+    margin: -14px 10px 0 5px;
+}
+.sns1 table tr td:nth-child(4){
+	width: 140px;
+	table-layout: fixed;
+}
+.sns1 table tr td:last-child{
+	width: 120px;
+	text-align: center;
+	border-right: none;
+	table-layout: fixed;
+}
+.sns1 .writer{
+	text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    width: 110px;
+}
+.sns1 table tr td a{
+	font-weight: 300;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    max-width: 450px;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+.sns1 table tr td a:hover{
+	text-decoration: underline;
+    color: #bc0303;
+}
+
+.wait{
+	background: #a88759;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 1px 5px 2px;
+    
+}
+.fin{
+	background: #bc0303;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 1px 5px 2px;
+  
+}
+
+
+.sociallast{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.numpage{
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+}
+.numpage a{
+	width: 30px;
+	height: 30px;
+	align-items: center;
+	display: flex;
+	border:1px solid #d2d2d2;
+	text-align: center !important;
+	margin-left: 5px;
+	justify-content: center;
+	color: #888;
+}
+.numpage a:first-child {
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_pagePrev.png")no-repeat center center;
+}
+.numpage a:last-child {
+	background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_pageNext.png") no-repeat center center;
+}
+.numpage .pnum:hover {
+	color: #fff;
+	background: #a88759;
+}
+
+.writebtn{
+	width: 131px;
+	height: 34px;
+	position: absolute;
+	right: 0;	
+	cursor: pointer;
+}
+
+.writebtn {
+	display:flex;
+	width: 131px;
+	height: 34px;
+	background: #bc0303;
+    color: #fff;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+.writebtn span:before {
+	background: url("https://www.fcseoul.com/resources/front/images/sub/fanzone/ico__write.png")no-repeat 0 0 ;
+	content:'';
+	display: inline-block;
+	width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.page{
+	color: #fff !important;
+	background: #a88759;
+}
+
+
+
+
+
+
+
+
+/* 신고박스 */
+.guidepop{
+	position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.guidemodal{
+	width: 600px;
+	display: flex;
+	flex-direction:column; 
+}
+.guidetop{
+	background: #fff;
+	height: 60px;
+	align-items: center;
+	display: flex;
+	width: 600px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.cancle{
+	background: url("https://www.fcseoul.com/resources/front/images/common/btn_lpClose.png")no-repeat;
+	width: 22px;
+	height: 22px;
+	border: none;
+	margin-left: auto;
+	cursor: pointer;
+}
+.guidetitle{
+	margin-right: auto;
+	color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+.mainguide{
+	padding: 20px 20px;
+	color: #666;
+	background: #fff;
+}
+.mainguide strong{
+	font-size: 16px;
+	color: #000;
+}
+.guide1 {
+	width: 468px;
+    height: 77px;
+    padding-left: 30px;
+    position: relative;
+}
+.guide1:before{
+	content: '1';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #c70101;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 20px;
+	text-align: center;
+}
+.guide2{
+	height: 51px;
+    width: 468px;
+    padding-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+.guide2:before{
+	content: '2';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #c70101;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 20px;
+	text-align: center;
+}
+.guide3{
+	width: 468px;
+    height: 153px;
+    padding-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+.guide3:before{
+	content: '3';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #c70101;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 20px;
+	text-align: center;
+}
+.guidereson{
+	margin-top: 6px;
+    border: 1px solid #d2d2d2;
+    background: #fbfbfb;
+    padding: 20px;
+}
+
+.agreebtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	height: 46px;
+	box-sizing: border-box;
+}
+
+.reportbtn a{
+	width: 150px;
+	height: 46px;
+	display: block;
+	text-align: center;
+	line-height: 46px;
+}
+.rp{
+	background: #c70101;
+    color: #fff;
+   	width: 150px;
+   	height: 46px;
+   	border: none;
+   	cursor: pointer;
+   	font-size: 16px;
+   	font-weight: 400px;
+}
+.back{
+	background: #999;
+    color: #fff;
+    margin-left: 8px;
+   	width: 150px;
+   	height: 46px;
+   	border: none;
+   	cursor: pointer;
+   	font-size: 16px;
+   	font-weight: 400px;
+}
+
+       .footer {
+	        background: #151515;
+	        font-weight: 300;
+	        position: relative;
+		}
+		.mainbot {
+		        background: #f3f3f3;
+		        padding: 60px 0;
+		        box-sizing: border-box;
+		        height: 503px;
+		}
+		.sponsorwrap {
+		        display: inline-block;
+		        width: 246px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap2 {
+		        display: inline-block;
+		        width: 118px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap3 {
+		        display: inline-block;
+		        width: 246px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 20px;
+		        font-weight: 600;
+		        margin-bottom: 39px;
+		        text-align: left;
+		}
+		.sponsorwrap2 strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 19px;
+		        font-weight: 650;
+		        margin-bottom: 17px;
+		        letter-spacing: -1px;
+		        text-align: left;
+		}
+		.sponsorwrap3 strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 19px;
+		        font-weight: 650;
+		        margin-bottom: 15px;
+		        letter-spacing: -1px;
+		        text-align: left;
+		}
+		.sponsorwrap strong:before, .sponsorwrap2 strong:before, .sponsorwrap3 strong:before
+		        {
+		        content: '';
+		        display: inline-block;
+		        width: 4px;
+		        height: 20px;
+		        background:
+		                url(https://www.fcseoul.com/resources/front/images/sub/common/ico_title.jpg)
+		                no-repeat center center;
+		        background-size: 100%;
+		        position: absolute;
+		        top: 3px;
+		        left: 0;
+		        letter-spacing: -1px;
+		}
+		.imgl {
+		        display: inline;
+		        float: left;
+		        margin-bottom: 7px;
+		}
+		.imgr {
+		        display: inline;
+		        float: right;
+		        margin-bottom: 7px;
+		}
+		.contentwrap2 {
+		        width: 1200px;
+		        position: relative;
+		        margin: auto;
+		}
+		.footer1 {
+		        border-bottom: 1px solid #272727;
+		        height: 60px;
+		}
+		.footer1 a {
+		        color: #ccc;
+		        height: 25px;
+		}
+		.foot {
+		        display: inline-block;
+		        width: 1200px;
+		        height: 60px;
+		        box-sizing: border-box;
+		        text-align: center;
+		}
+		.pri {
+		        display: inline;
+		        float: left;
+		        margin-top: 18px;
+		        letter-spacing: -1.2px;
+		}
+		.pri a {
+		        color: #f60000;
+		}
+		.pri1 {
+		        display: inline;
+		        margin-top: 18px;
+		        margin-left: 40px;
+		        float: left;
+		        letter-spacing: -1.3px;
+		}
+		.fright {
+		        display: inline-block;
+		        width: 236px;
+		        height: 60px;
+		        box-sizing: border-box;
+		}
+		.pri2 {
+		        display: inline;
+		        margin-top: 18px;
+		        margin-left: 30px;
+		        float: right;
+		}
+		.footer2 {
+		        padding: 20px 0 30px;
+		        height: 118px;
+		        box-sizing: border-box;
+		}
+		.foot1 {
+		        width: 174px;
+		        height: 68px;
+		        float: left;
+		}
+		.foot2 {
+		        color: #ccc;
+		        font-size: 14px;
+		        float: left;
+		        position: relative;
+		        padding-top: 10px;
+		}
+		.footer .foot2 img {
+		        margin-right: 40px;
+		}
+		.foot2 ul li::after {
+		        content: '';
+		        display: inline-block;
+		        width: 1px;
+		        height: 13px;
+		        background: #444;
+		        transform: translateY(-50%);
+		        position: absolute;
+		        top: 35%;
+		        margin-left: 15px;
+		}
+		.foot2 ul li:nth-child(4)::after {
+		        display: none;
+		}
+		.footer .footer2 ul li {
+		        display: inline;
+		        list-style-type: none;
+		        margin-right: 30px;
+		        font-size: 14px;
+		        letter-spacing: -0.8px;
+		}
+		.footer .footer2 ul {
+		        margin-bottom: 5px;
+		}
+		.footer .footer2 p {
+		        color: #ccc;
+		        font-size: 15px;
+		        margin-top: 10px;
+		        letter-spacing: -0.5px;
+		}
+		.footer .foot3 img {
+		        float: right;
+		        margin-top: 10px;
+		}
+		.footer .mainbot .contentwrap {
+		        width: 1222px;
+		        margin: auto;
+		}
+#op{
+	margin-top: -14px;
+}
+
+

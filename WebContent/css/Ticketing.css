@@ -1,0 +1,673 @@
+@charset "UTF-8";
+		div{
+			display : block;
+		}
+		i{
+			font : inherit;
+		}
+		*{
+			list-style: none;
+    		word-break: break-all;
+    		word-wrap: break-word;
+    		box-sizing: border-box !important;
+    		margin : 0;
+    		padding : 0;
+		}
+		@font-face	{
+			font-family : "Exo-Bold";
+			src: url("../font/Exo-Bold.otf");	
+		}
+		button, input, select, textarea{
+			font-family : inherit;
+			font-size : 100%;
+			line-height : 1.15;
+		}
+		main{
+			display : block;
+			overflow-x : hidden;
+		}
+		select {
+			font-size: 100%;
+		    line-height: 1.15;
+		    margin: 0;
+		}
+		body select {
+			min-width: 120px;
+			eight: 40px;
+		    padding: 0 30px 0 10px;
+		    border: 1px solid #b2b2b2;
+		    font-family: inherit;
+		    background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_select.png") no-repeat 95% 50%;
+    		border-radius: 0px;
+		}
+		option {
+		    font-weight: normal;
+		    display: block;
+		    white-space-collapse: collapse;
+		    text-wrap: nowrap;
+		    min-height: 1.2em;
+		    padding: 0px 2px 1px;
+		}
+		.mainSection{
+			position : relative;
+			width : 1200px;
+			margin : 0 auto;
+		    min-height: calc(100vh - 340px);
+		    padding-bottom: 100px;
+		}	
+		body {
+			font-family: 'Noto Sans KR', sans-serif;
+			position: relative;
+		}
+		.bannertop {
+		    min-width: 1200px;
+			position : relative;
+			width : 100%;
+			height : 323px;
+		    background-image: url("https://www.fcseoul.com/resources/front/images/sub/common/img_top1.jpg");
+			background-size : cover	!important;
+		}
+		.container h2{
+			height: 263px;
+			display: flex;
+    		padding: 30px 0 20px;
+    		align-items: center;
+    		-webkit-box-align: center;
+    		justify-content: center;
+		    color: #fff;
+		    font-family: 'ExoBold';
+		    font-size: 56px;
+		    font-weight: 500;
+		    margin : 0 auto;
+		    font-family : "Exo-Bold";
+			font-size : 56px;
+		}
+		.content ul{
+			display : flex;
+		}
+		.content{
+			width: 1200px;
+			height : 60px;
+    		margin: 0 auto;
+		}
+		.contentButton{
+			background: rgba(199, 1, 1, 0.9);
+    	    height: 60px;
+    	    position : absolute;
+    	    bottom: 0px;
+    	    width: 100vw;
+    		min-width: 1200px;
+    		left: 0;
+    		z-index: 9;
+		}
+		.content ul li{
+			position : relative;
+		}
+		body a{
+		    display: inline-block;
+		    text-decoration: none;
+		    color: #222;
+		}
+		li button {
+			color: #fff;
+		    min-width: 240px;
+		    height: 60px;
+		    padding: 0 20px;
+		    display: flex;
+		    -webkit-box-align: center;
+		    font-size: 18px;
+		    -webkit-box-pack: start;
+		    justify-content: flex-start;
+		    font-weight: 300;
+		    border-right: 1px solid #d43e3e;
+    		text-transform: uppercase;
+    		align-items: center;
+		}
+		body button {
+			border: none;
+		    background: none;
+		    margin: 0;
+		    cursor: pointer;
+		}
+		.bannertop .contentButton .content li .button::after {
+		    content: '';
+		    display: inline-block;
+		    width: 17px;
+		    height: 17px;	
+		    margin-left: auto;
+		    background: url(../Images/ico_dropDown.png) no-repeat center center;
+		}
+		.bannertop .contentButton .content li .on::after {
+		    content: '';
+		    display: inline-block;
+		    width: 17px;
+		    height: 17px;	
+		    margin-left: auto;
+		    background: url(../Images/ico_dropUp.png) no-repeat center center;
+		}
+		.bannertop .contentButton .content li.home a{
+			border: 1px solid #d43e3e;
+		    border-style: none solid;
+		    background: url(../Images/home.png) no-repeat center center;
+		    width: 60px;
+		    height: 60px;
+		}
+		#buttonUI {
+			position: absolute;
+		    top: 60px;
+		    left: 0;
+		    z-index: 1;
+		    width: 100%;
+		    background: #151515;
+		    color: #fff;
+		}
+		#buttonUI a{
+			color: #bbb;
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-start;
+		    text-decoration: none;
+		    height: 60px;
+		    font-size: 18px;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    padding: 0 20px;
+		}
+		#buttonUI li :hover{
+			color: #fff;
+    		background: #c70101;
+		}
+		#buttonUI li :hover::after{
+			content: '';
+		    display: inline-block;
+		    width: 20px;
+		    height: 7px;
+		    background: url(../Images/ico_go.png) no-repeat center center;
+		    margin-left: auto;
+		}
+		#buttonUI2 {
+			position: absolute;
+		    top: 60px;
+		    left: 0;
+		    z-index: 1;
+		    width: 100%;
+		    background: #151515;
+		    color: #fff;
+		}
+		#buttonUI2 a{
+			color: #bbb;
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-start;
+		    text-decoration: none;
+		    height: 60px;
+		    font-size: 18px;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    padding: 0 20px;
+		}
+		#buttonUI2 li :hover{
+			color: #fff;
+    		background: #c70101;
+		}
+		#buttonUI2 li :hover::after{
+			content: '';
+		    display: inline-block;
+		    width: 20px;
+		    height: 7px;
+		    background: url(../Images/ico_go.png) no-repeat center center;
+		    margin-left: auto;
+		}
+		body img{
+                    vertical-align: middle;        
+            }
+        .subtop{
+       	 		width :1200px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                height: 137px;
+                border-bottom: 1px solid #d2d2d2;
+                position: relative;
+                margin : 0 auto 50px auto;
+        }
+        .subtop .left{
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        }
+        .subtop .right{
+                right: 0; 
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        }
+        .subtop .right button {
+                font-size: 14px;
+                font-weight: 300;
+                color: #666;
+                border: 1px solid #666;
+                padding: 5px 10px;
+        }
+        .subtop .left span{
+                font-size: 16px;
+                font-weight: 300;
+                color: #666;
+        }
+        .subtop .left span img {
+                margin-left: 10px;
+            }
+        .subtop .left a {
+            margin-left: 15px;
+            display: inline-block;
+            text-decoration: none;
+            color: #222;
+        }
+        .h3 {
+            font-family: 'Noto Sans KR';
+            font-size: 38px;
+            font-weight: 700;
+            color: #222;
+            padding: 30px 0;
+        }
+        .mainSection {
+        	padding-bottom: 100px;
+        }
+        .mainSection .ticketing1 h4 {
+        	display:flex;
+        	font-size : 30px;
+        	font-weight : 500;
+        	margin: 50px 0 10px;
+		    justify-content: flex-start;
+		    align-items: center;
+        }
+        .mainSection .ticketing1 h4::before {
+        	content: '';
+        	width: 5px;
+		    height: 28px;
+		    background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_title.jpg") no-repeat center center;
+		    margin-right: 14px;
+        }
+        .mainSection .ticketing2 h4 {
+        	display:flex;
+        	font-size : 30px;
+        	font-weight : 500;
+        	margin: 50px 0 10px;
+		    justify-content: flex-start;
+		    align-items: center;
+        }
+        .mainSection .ticketing2 h4::before {
+        	content: '';
+        	width: 5px;
+		    height: 28px;
+		    background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_title.jpg") no-repeat center center;
+		    margin-right: 14px;
+        }
+        .mainSection .ticketing1 .imgWrap{
+        	height : 986px;
+        }
+        .mainSection .ticketing1 .imgWrap .btnWrap {
+		    position: relative;
+		    align-items: center;
+    		justify-content: center;
+		    display: flex;
+		    bottom: 150px;
+        }
+        .mainSection .ticketing1 .imgWrap .btnWrap a {
+            display: flex;
+            align-items: center;
+            color: #fff;
+        	padding: 0 60px !important;
+        	background: linear-gradient(to top, #aa0000, #f60000) !important;
+    		border: none !important;
+    		box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+		    height: 60px !important;
+		    font-size: 20px !important;
+        }.mainSection .ticketing2 .seatTable,
+         .mainSection .ticketing2 .skyTable,
+         .mainSection .ticketing2 .sale
+         {
+	        border-collapse: collapse;
+	    	border-spacing: 0;
+        	width: 100%;
+       	}
+     	.mainSection .ticketing2 .seatTable th,
+     	.mainSection .ticketing2 .skyTable th,
+     	.mainSection .ticketing2 .sale th
+     	{
+       	    background: #f7f7f7;
+		    border-top: 1px solid #0e0e0e;
+		    font-weight: 500 !important;
+     	}
+     	.mainSection .ticketing2 .seatTable th , 
+     	.mainSection .ticketing2 .seatTable td ,
+     	.mainSection .ticketing2 .skyTable th ,
+     	.mainSection .ticketing2 .skyTable td ,
+     	.mainSection .ticketing2 .sale th ,
+     	.mainSection .ticketing2 .sale td
+     	{
+     		vertical-align: middle;
+		    text-align: center;
+		    font-size: 16px;
+		    font-weight: 300;
+		    border: 1px solid #ddd;
+		    padding: 15px;
+     	}
+     	.mainSection .ticketing2 td.first {
+     		font-weight : 500;
+     	}
+       	.mainSection .ticketing2 .seatTable th:first-child {
+		    width: 20%;
+		    border-left : none;
+		}
+		.mainSection .ticketing2 .seatTable th {
+		    width: 10%;
+		}
+		.mainSection .ticketing2 th.price,
+		.mainSection .ticketing2 td.price {
+		    color: #c70101;
+		}
+		.mainSection .ticketing2 .seatTable th:last-child {
+		    width: 25%;
+		}
+		.mainSection .ticketing2 .bottomTxtWrap {
+		    margin-top: 15px;
+		}
+		.mainSection .ticketing2 .tblWrap {
+		    margin-top: 15px;
+		}
+        .mainSection .ticketing2 .grayBox {
+       	    margin-top: 50px;
+       	    display: flex;
+     	    align-items: center;
+     	    background: #f5f5f5;
+   		    padding: 20px;
+        }
+        .mainSection .ticketing2 .grayBox .left {
+        	margin-right : 80px;
+        }
+        .mainSection .ticketing2 .grayBox .guideTitle {
+		    border-bottom: 1px solid #000;
+		    padding-bottom: 15px;
+		    margin-bottom: 15px;
+		}
+		.mainSection .ticketing2 .grayBox .guideTitle strong {
+		    font-size: 24px;
+		    font-weight: 500;
+		}
+		.mainSection .ticketing2 .grayBox>div.left .guideUl {
+		    font-size: 16px;
+		}
+		.mainSection .ticketing2 .grayBox>div.left .guideUl span {
+		    color: #c70101;
+		}
+		.mainSection .ticketing2 .grayBox>div.left .btnWrap {
+			display : flex;
+		    justify-content: flex-start;
+		    margin-top: 30px;
+		}
+		.mainSection .ticketing2 .grayBox>div.left .btnWrap button {
+		    background: #151515;
+		    color: #fff;
+		    padding: 15px;
+		    font-size: 16px;
+		}
+		.mainSection .ticketing2 .grayBox>div.left .btnWrap button::after {
+		    content: '';
+		    display: inline-block;
+		    width: 16px;
+		    height: 15px;
+		    background: url("https://www.fcseoul.com/resources/front/images/sub/common/ico_np.png") no-repeat center center;
+		    margin-left: 10px;
+		}
+		.grayBox>div.right {
+		    width: 548px;
+		}
+		.buttonImage {
+			position: fixed;
+		    left: 0;
+		    top: 0;
+		    z-index: 99;
+		    width: 100vw;
+		    height: 100vh;
+		    background: rgba(0, 0, 0, 0.6);
+		    display : flex;
+		    align-items: center;
+	        justify-content: center;
+	        flex-direction: column;
+	        scrollbar-gutter: stable;
+		}
+		.buttonImage .top {
+		    background: #c70101;
+		    color: #fff;
+		    font-size: 24px;
+		    width : 100vh;
+		    height: 60px;
+		    display: flex;
+		    align-items: center;
+		    padding: 0 20px;
+    		position: relative;
+		}
+		.buttonImage .top .lpCloseBtn{
+		    width: 22px;
+		    height: 22px;
+		    background: url("https://www.fcseoul.com/resources/front/images/common/btn_lpClose_fff.png") no-repeat right 0;
+		    position: absolute;
+		    right: 20px;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+		.buttonImage .bottom{
+			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.buttonImage .bottom div img {
+			width : 100vh;
+		}
+		.footer {
+	        background: #151515;
+	        font-weight: 300;
+	        position: relative;
+		}
+		.mainbot {
+		        background: #f3f3f3;
+		        padding: 60px 0;
+		        box-sizing: border-box;
+		        height: 503px;
+		}
+		.sponsorwrap {
+		        display: inline-block;
+		        width: 246px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap2 {
+		        display: inline-block;
+		        width: 118px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap3 {
+		        display: inline-block;
+		        width: 246px;
+		        margin-right: 24px;
+		        box-sizing: border-box;
+		        float: left;
+		}
+		.sponsorwrap strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 20px;
+		        font-weight: 600;
+		        margin-bottom: 39px;
+		        text-align: left;
+		}
+		.sponsorwrap2 strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 19px;
+		        font-weight: 650;
+		        margin-bottom: 17px;
+		        letter-spacing: -1px;
+		        text-align: left;
+		}
+		.sponsorwrap3 strong {
+		        float: left;
+		        position: relative;
+		        padding-left: 10px;
+		        line-height: 1.2;
+		        text-transform: uppercase;
+		        font-family: 'ExoBold', 'Noto Sans KR';
+		        font-size: 19px;
+		        font-weight: 650;
+		        margin-bottom: 15px;
+		        letter-spacing: -1px;
+		        text-align: left;
+		}
+		.sponsorwrap strong:before, .sponsorwrap2 strong:before, .sponsorwrap3 strong:before
+		        {
+		        content: '';
+		        display: inline-block;
+		        width: 4px;
+		        height: 20px;
+		        background:
+		                url(https://www.fcseoul.com/resources/front/images/sub/common/ico_title.jpg)
+		                no-repeat center center;
+		        background-size: 100%;
+		        position: absolute;
+		        top: 3px;
+		        left: 0;
+		        letter-spacing: -1px;
+		}
+		.imgl {
+		        display: inline;
+		        float: left;
+		        margin-bottom: 7px;
+		}
+		.imgr {
+		        display: inline;
+		        float: right;
+		        margin-bottom: 7px;
+		}
+		.contentwrap2 {
+		        width: 1200px;
+		        position: relative;
+		        margin: auto;
+		}
+		.footer1 {
+		        border-bottom: 1px solid #272727;
+		        height: 60px;
+		}
+		.footer1 a {
+		        color: #ccc;
+		        height: 25px;
+		}
+		.foot {
+		        display: inline-block;
+		        width: 1200px;
+		        height: 60px;
+		        box-sizing: border-box;
+		        text-align: center;
+		}
+		.pri {
+		        display: inline;
+		        float: left;
+		        margin-top: 18px;
+		        letter-spacing: -1.2px;
+		}
+		.pri a {
+		        color: #f60000;
+		}
+		.pri1 {
+		        display: inline;
+		        margin-top: 18px;
+		        margin-left: 40px;
+		        float: left;
+		        letter-spacing: -1.3px;
+		}
+		.fright {
+		        display: inline-block;
+		        width: 236px;
+		        height: 60px;
+		        box-sizing: border-box;
+		}
+		.pri2 {
+		        display: inline;
+		        margin-top: 18px;
+		        margin-left: 30px;
+		        float: right;
+		}
+		.footer2 {
+		        padding: 20px 0 30px;
+		        height: 118px;
+		        box-sizing: border-box;
+		}
+		.foot1 {
+		        width: 174px;
+		        height: 68px;
+		        float: left;
+		}
+		.foot2 {
+		        color: #ccc;
+		        font-size: 14px;
+		        float: left;
+		        position: relative;
+		        padding-top: 10px;
+		}
+		.footer .foot2 img {
+		        margin-right: 40px;
+		}
+		.foot2 ul li::after {
+		        content: '';
+		        display: inline-block;
+		        width: 1px;
+		        height: 13px;
+		        background: #444;
+		        transform: translateY(-50%);
+		        position: absolute;
+		        top: 35%;
+		        margin-left: 15px;
+		}
+		.foot2 ul li:nth-child(4)::after {
+		        display: none;
+		}
+		.footer .footer2 ul li {
+		        display: inline;
+		        list-style-type: none;
+		        margin-right: 30px;
+		        font-size: 14px;
+		        letter-spacing: -0.8px;
+		}
+		.footer .footer2 ul {
+		        margin-bottom: 5px;
+		}
+		.footer .footer2 p {
+		        color: #ccc;
+		        font-size: 15px;
+		        margin-top: 10px;
+		        letter-spacing: -0.5px;
+		}
+		.footer .foot3 img {
+		        float: right;
+		        margin-top: 10px;
+		}
+		.footer .mainbot .contentwrap {
+		        width: 1222px;
+		        margin: auto;
+		}
+		
