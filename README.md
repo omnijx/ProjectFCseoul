@@ -1,4 +1,4 @@
-# ✔JSP✔
+# ✔JSP Project✔
 # ⚽️ FC 서울 ⚽️
 
 <br>
@@ -13,11 +13,15 @@
 ##### 불 이웃 가정에게 도시락 기부
 ##### 기부 랭킹
 
+<br>
+<br> 
 
 ## 📽 ERD
 
 ![image](https://github.com/omnijx/ProjectFCseoul/assets/141091837/2f627468-731e-477a-8004-a304e0c0d6ea)
 
+<br>
+<br>
 
 ## 👪 페이지 
 
@@ -38,10 +42,15 @@
 ### 메인페이지
 ### ㅁㄴㅇㅁㄴㅇㄴㅁ
 
+<br>
+
 # [back-end]
 
 ### 도시락 후기 작성(CRUD)
 ### ㅁㄴㅇㅁㄴ
+
+<br>
+<br>
 
 ⏰ 프로젝트 전체적인 타임라인 <br>
 |일자|내용|구체적인 활동|
@@ -53,7 +62,8 @@
 |8월 8일 ~ 9월 3일|Back 작업|백엔드 역할 분담 및 백 작업|
 
 
-
+<br>
+<br>
 
 <h2 align="center">🛠 사용 기술 🛠</h2>
 
@@ -74,6 +84,8 @@
   <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=white"></a>&nbsp 
 </p>
 
+<br>
+<br> 
 
 <div align="center">
  <h2 align="center">⚙️ Tools ⚙️</h2>
@@ -82,14 +94,16 @@
   <img src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=flat&logo=Eclipse&logoColor=white"></a>&nbsp 
 </div>
 
-
+<br>
+<br>
 
 ## 💡 주요기능
 ### 일반 회원
 ### 1. 회원가입
 ### 2. 유저 로그인/ 로그아웃
 
-
+<br>
+<br>
 
 ### 관리자
 ### 1. 관리자 로그인/ 로그아웃
