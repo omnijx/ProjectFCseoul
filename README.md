@@ -25,10 +25,12 @@
 
 ## 👪 페이지 
 
-![image](https://github.com/omnijx/ProjectFCseoul/assets/141091837/db41b254-20c9-4160-ba9a-f0640a3a58a5)
+
+![image](https://github.com/omnijx/ProjectFCseoul/assets/141091837/4b2f7bba-949f-4132-80a3-d1218a179de6)
 
 
-![image](https://github.com/omnijx/ProjectFCseoul/assets/141091837/f01079ea-b64a-4d8b-a874-87788dd91973)
+![image](https://github.com/omnijx/ProjectFCseoul/assets/141091837/22507561-0df4-4090-94ea-13bae0b572bd)
+
 
 
 
