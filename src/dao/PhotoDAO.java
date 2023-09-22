@@ -149,7 +149,7 @@ public class PhotoDAO {
 		PhotoDTO pDto = new PhotoDTO(bno2, round, title, r_date, image, league, category2, count);
 	
 		try {
-			Connection conn = conn();
+			Connection conn = conn(); 
 			String sql = "SELECT b2.*"
 					+ " FROM (SELECT rownum rnum, b1.*"
 					+ " FROM (SELECT * FROM photo WHERE bno=? ORDER BY bno) b1) b2"
